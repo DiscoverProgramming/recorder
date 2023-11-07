@@ -84,7 +84,6 @@ class lib:
 
         # Run a for loop to iterate through all the images in a list and write them to the file.
         for image in images:
-            print(image)
             video.write(cv2.imread(os.path.join(self.dir, image)))
 
         # Call the destroyAllWindows() function and release() function.
@@ -103,4 +102,3 @@ class lib:
     def run(self):
         Thread(target=self.get_input).start()
         Thread(target=self.capture).start()
-  
