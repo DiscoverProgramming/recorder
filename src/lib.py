@@ -80,7 +80,7 @@ class lib:
         height, width, layers = frame.shape
 
         # Create a VideoWriter to compile the images to a video.
-        video = cv2.VideoWriter("vid\\video.mp4", 0, 1 / self.interval, (width,height))
+        video = cv2.VideoWriter("..\\vid\\video.mp4", 0, 1 / self.interval, (width,height))
 
         # Run a for loop to iterate through all the images in a list and write them to the file.
         for image in images:
